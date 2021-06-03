@@ -64,7 +64,7 @@ public class MainServer extends AbstractHandler {
 
 
     public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ServletException {
+            throws IOException {
         System.out.println (target);
         if (target.equals ("/")) {
             indexHandler (target, baseRequest, request, response);
